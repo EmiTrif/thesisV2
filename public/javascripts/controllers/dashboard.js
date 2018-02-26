@@ -30,114 +30,114 @@ var subjCH = subjHightDef;
 
 var SOptions = {
 	FGaze : {
-		col : "http://localhost:3000/GazeF",
+		col : "https://thesisv2.herokuapp.com/GazeF",
 		annCH : 350 }, 
 	IGaze : {
-		col : "http://localhost:3000/GazeI",
+		col : "https://thesisv2.herokuapp.com/GazeI",
 		annCH : 400 },
 	FHead : {
-		col : "http://localhost:3000/HeadF",
+		col : "https://thesisv2.herokuapp.com/HeadF",
 		annCH : 550 },
 	IHead : {
-		col : "http://localhost:3000/HeadI",
+		col : "https://thesisv2.herokuapp.com/HeadI",
 		annCH : 700 },
 	FHand : {
-		col : "http://localhost:3000/HandF",
+		col : "https://thesisv2.herokuapp.com/HandF",
 		annCH : 800 },
 	IHand : {
-		col : "http://localhost:3000/HandI", 
+		col : "https://thesisv2.herokuapp.com/HandI", 
 		annCH : 1500 },	
 	FTouch : {
-		col : "http://localhost:3000/TouchF",
+		col : "https://thesisv2.herokuapp.com/TouchF",
 		annCH : 700 },
 	ITouch : {
-		col : "http://localhost:3000/TouchI",
+		col : "https://thesisv2.herokuapp.com/TouchI",
 		annCH : 900 },
 	FPosture : {
-		col : "http://localhost:3000/PostureF",
+		col : "https://thesisv2.herokuapp.com/PostureF",
 		annCH : 300 },
 	IPosture : {
-		col : "http://localhost:3000/PostureI",
+		col : "https://thesisv2.herokuapp.com/PostureI",
 		annCH : 350 },
 
 	F013:	{
-		col: "http://localhost:3000/S013F",
+		col: "https://thesisv2.herokuapp.com/S013F",
 		annCH : 1400
 	},
 	I013:	{
-		col: "http://localhost:3000/S013I",
+		col: "https://thesisv2.herokuapp.com/S013I",
 		annCH : 1200
 	},
 	F040:	{
-		col: "http://localhost:3000/S040F",
+		col: "https://thesisv2.herokuapp.com/S040F",
 		annCH : 900
 	},
 	I040:	{
-		col: "http://localhost:3000/S040I",
+		col: "https://thesisv2.herokuapp.com/S040I",
 		annCH : 1200
 	},
 	F061:	{
-		col: "http://localhost:3000/S061F",
+		col: "https://thesisv2.herokuapp.com/S061F",
 		annCH : 1000
 	},
 	I061:	{
-		col: "http://localhost:3000/S061I",
+		col: "https://thesisv2.herokuapp.com/S061I",
 		annCH : 1800
 	},
 	F065:	{
-		col: "http://localhost:3000/S065F",
+		col: "https://thesisv2.herokuapp.com/S065F",
 		annCH : 1600
 	},
 	I065:	{
-		col: "http://localhost:3000/S065I",
+		col: "https://thesisv2.herokuapp.com/S065I",
 		annCH : 1800
 	},
 	F074:	{
-		col: "http://localhost:3000/S074F",
+		col: "https://thesisv2.herokuapp.com/S074F",
 		annCH : 900
 	},
 	I074:	{
-		col: "http://localhost:3000/S074I",
+		col: "https://thesisv2.herokuapp.com/S074I",
 		annCH : 1600
 	},
 	F077:	{
-		col: "http://localhost:3000/S077F",
+		col: "https://thesisv2.herokuapp.com/S077F",
 		annCH : 1200
 	},
 	I077:	{
-		col: "http://localhost:3000/S077I",
+		col: "https://thesisv2.herokuapp.com/S077I",
 		annCH : 1800
 	},
 	F079:	{
-		col: "http://localhost:3000/S079F",
+		col: "https://thesisv2.herokuapp.com/S079F",
 		annCH : 900
 	},
 	I079:	{
-		col: "http://localhost:3000/S079I",
+		col: "https://thesisv2.herokuapp.com/S079I",
 		annCH : 1200
 	},
 	F090:	{
-		col: "http://localhost:3000/S090F",
+		col: "https://thesisv2.herokuapp.com/S090F",
 		annCH : 900
 	},
 	I090:	{
-		col: "http://localhost:3000/S090I",
+		col: "https://thesisv2.herokuapp.com/S090I",
 		annCH : 2600
 	},
 	F108:	{
-		col: "http://localhost:3000/S108F",
+		col: "https://thesisv2.herokuapp.com/S108F",
 		annCH : 1600
 	},
 	I108:	{
-		col: "http://localhost:3000/S108I",
+		col: "https://thesisv2.herokuapp.com/S108I",
 		annCH : 1600
 	},
 	F121:	{
-		col: "http://localhost:3000/S121F",
+		col: "https://thesisv2.herokuapp.com/S121F",
 		annCH : 1200
 	},
 	I121:	{
-		col: "http://localhost:3000/S121I",
+		col: "https://thesisv2.herokuapp.com/S121I",
 		annCH : 1400
 	}
 };
