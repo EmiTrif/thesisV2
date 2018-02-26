@@ -1,0 +1,15 @@
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+
+var tempSchema2 = new Schema({
+	annotationID: String,
+	SubjectID: {type: String, index: true},
+	TopicID: {type: String, index: true},
+	TierID: {type: String, index: true},
+	annotationValue: {type: String, index: true},
+	time_start: {type: String, index: true},
+	time_end: {type: String, index: true}
+});
+
+module.exports = mongoose.model('tempSchema2', tempSchema2, 't1_secondpart2');

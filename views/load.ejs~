@@ -1,0 +1,15 @@
+<!DOCTYPE Html>
+<html lang="en">
+
+<head>
+	<title>DV</title>
+	<meta charset="utf-8">
+	<link href='/stylesheets/style.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+<form type="submit" action="/DVsearch/load/submit" method="post">
+		<button action class="Sbtn2" type="submit" name="submit">Click to load your results</button>
+</form>		
+</body>
+</html>

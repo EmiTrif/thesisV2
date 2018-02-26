@@ -1,0 +1,130 @@
+//dependencies
+var express = require('express');
+var async =  require('async');
+var router = express.Router();
+var mongoose = require('mongoose');
+
+//path to functions
+var queryLogic = require('../logic/logic.js');
+
+var annotationModel = require('../api/models/dataTemplate.js');
+var resultQ1 = require('../api/models/tempS1.js');
+var resultQ2 = require('../api/models/tempS2.js');
+var resultSecondaryQ1 = require('../api/models/tempS3.js');
+var resultSecondaryQ2 = require('../api/models/tempS4.js');
+
+var ResultDB = require('../api/models/resultTemplate.js');
+var ResultDB2 = require('../api/models/resultTemplate2.js');
+
+//------------------------------------------------ GET home page--------------------------------------
+
+router.get('/', function(req, res, next) {
+	res.render('index');
+});
+
+//-----------------------------------------POST------------------------------------------
+router.post('/submit', function(req, res, next){	
+
+	queryLogic.resetAllTempDb(resultQ1, resultQ2, resultSecondaryQ1, resultSecondaryQ2, ResultDB);
+	req.session.success = true;
+	
+	
+	var topicID = req.body.topicID;
+	var tierID = req.body.tierID;
+	var annotationV = req.body.annotationV; 
+	
+	var topic2ID = req.body.topic2ID; 
+	
+	var tier2ID = req.body.tier2ID;
+	var annotation2V = req.body.annotation2V; 
+	
+	console.log(topicID);
+	console.log(tier2ID);
+	console.log(annotation2V);
+	
+	console.log('so far so good');	
+	
+	
+	
+		//------------------------------------------------------SyncQuery---------------------------------------
+	
+				//-----------main topic
+const promise_query1 = new Promise((resolve, reject) => {  //------main topic part1
+	var sync1 = null;
+	sync1 = queryLogic.simpleQuery(annotationModel, topicID, tierID, annotationV, resultQ1);
+
+	if (sync1) {
+		setTimeout(resolve, 1000, 'sync1::ready!')
+	} else{
+		reject('sync1::something went wrong...')	
+	}
+});
+
+const promise_query2 = new Promise((resolve, reject) => {   //-------main topic part2
+	var sync2 = null;
+	sync2 = queryLogic.simpleQuery(annotationModel, topicID, tier2ID, annotation2V, resultQ2);
+
+	if (sync2) {
+		setTimeout(resolve, 1000, 'sync2::ready!')
+	} else{
+		reject('sync2::something went wrong...')	
+	}
+});
+
+				//-------secondary topic			
+const promise_querySecondary1 = new Promise((resolve, reject) => {  //------secondary topic part1
+	var sync2 = null;
+	sync1 = queryLogic.simpleQuery(annotationModel, topic2ID, tierID, annotationV, resultSecondaryQ1);
+
+	if (sync1) {
+		setTimeout(resolve, 1000, 'sync1::ready!')
+	} else{
+		reject('sync1::something went wrong...')	
+	}
+});
+
+const promise_querySecondary2 = new Promise((resolve, reject) => {   //-------secondary topic part2
+	var sync2 = null;
+	sync2 = queryLogic.simpleQuery(annotationModel, topic2ID, tier2ID, annotation2V, resultSecondaryQ2);
+
+	if (sync2) {
+		setTimeout(resolve, 1000, 'sync2::ready!')
+	} else{
+		reject('sync2::something went wrong...')	
+	}
+});
+
+			//----------------------------------------------------SetDb------------------------------------------
+
+function ensureDbisSet(resultDb1, resultDb2){
+		var condition1 = null;
+		var condition2 = null;
+		
+		condition1 = resultDb1.findOne();
+		condition2 = resultDb2.findOne();
+		while ((condition1 == null) || (condition2 == null)) {
+				ensureDbisSet()
+		};
+};
+	
+			//---------------------------------------------------Phase2Query--------------------------------------
+
+Promise.all([promise_query1, promise_query2]).then(values => { 		//----------main topic phase2
+		console.log(values); 
+		ensureDbisSet(resultQ1, resultQ2);
+		queryLogic.syncQueryResult(resultQ1, resultQ2, ResultDB);					
+});
+
+Promise.all([promise_querySecondary1, promise_querySecondary2]).then(values => { 		//----------secondary topic phase2
+		console.log(values, 'secondary phase2'); 
+		ensureDbisSet(resultSecondaryQ1, resultSecondaryQ2);
+		queryLogic.syncQueryResult(resultSecondaryQ1, resultSecondaryQ2, ResultDB2);
+});
+
+res.redirect('/DVsearch/submit');
+});
+
+
+module.exports = router;
+
+

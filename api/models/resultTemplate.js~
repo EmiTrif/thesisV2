@@ -1,0 +1,11 @@
+var mongoose = require('mongoose');
+
+var Schema = mongoose.Schema;
+
+var resultSchema = new Schema({
+	annotationID1: String,
+	annotationID2: String,
+	SubjectID: {type: String, index: true},
+});
+
+module.exports = mongoose.model('ResultSchema', resultSchema, 'CoOccurrances');

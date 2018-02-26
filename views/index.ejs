@@ -1,0 +1,133 @@
+<!DOCTYPE Html>
+<html lang="en">
+
+<head>
+
+<title>DV</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src='/javascripts/libraries/d3.js' type='text/javascript'></script>
+<script type="text/javascript" src='/javascripts/libraries/crossfilter.js' type='text/javascript'></script>
+<script type="text/javascript" src='/javascripts/libraries/dc.js' type='text/javascript'></script>
+
+<link href='/stylesheets/dc.css' rel='stylesheet' type='text/css'> 
+<link href='/stylesheets/style.css' rel='stylesheet' type='text/css'>
+
+<script type="text/javascript" src='/javascripts/controllers/dashboard.js'></script> 
+</head>
+
+<body>
+			<!-- Dashboard tab -->
+	<strong> Select by Tier: </strong>
+	<select name="tierM" id="tierM">
+					<option selected="selected" value="FGaze">Gaze-Formal</option>
+					<option value="IGaze">Gaze-Informal</option>
+					<option value="FHand">HandShape-Formal</option>
+					<option value="IHand">HandShape-Informal</option>
+					<option value="FTouch">TouchMotion-Formal</option>
+					<option value="ITouch">TouchMotion-Informal</option>
+					<option value="FHead">HeadShift-Formal</option>
+					<option value="IHead">HeadShift-Informal</option>
+					<option value="FPosture">Posture-Formal</option>
+					<option value="IPosture">Posture-Informal</option>
+				</select>		
+	<button onclick="displayDashCharts(tierM.value)">show</button>	
+
+	<strong> Select by Subject: </strong>
+	<select name="subjM" id="subjM">
+					<option selected="selected" value="F013">013-formal</option>
+					<option value="I013">013-informal</option>
+					<option value="F040">040-formal</option>
+					<option value="I040">040-informal</option>
+					<option value="F061">061-formal</option>
+					<option value="I061">061-informal</option>
+					<option value="F065">065-formal</option>
+					<option value="I065">065-informal</option>
+					<option value="F074">074-formal</option>
+					<option value="I074">074-informal</option>
+					<option value="F077">077-formal</option>
+					<option value="I077">077-informal</option>
+					<option value="F079">079-formal</option>
+					<option value="I079">079-informal</option>
+					<option value="F090">090-formal</option>
+					<option value="I090">090-informal</option>
+					<option value="F108">108-formal</option>
+					<option value="I108">108-informal</option>
+					<option value="F121">121-formal</option>
+					<option value="I121">121-informal</option>
+				</select>		
+	<button onclick="displayDashCharts(subjM.value)">show</button>	
+
+	<div class="container-fluid wrapper">
+	
+		
+		<div class="jumbotron row col-left">
+
+			<div id="timeChart" class="col-sm-12 col-md-6">
+				<div id="topicSelection">
+    			<strong>Frequency</strong>
+   				<a class="reset" href="javascript:timeChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>
+
+
+			<div id="topicChart" class="col-sm-12 col-md-6">
+				<div id="topicSelection">
+    			<strong>Topics</strong>
+   				<a class="reset" href="javascript:topicChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>
+
+			<div id="subjChart" class="col-sm-12 col-md-6">
+				<div id="subjSelection">
+    			<strong>Subjects</strong>
+   				<a class="reset" href="javascript:subjChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>
+
+
+			<div class = "row mini">
+				<div id="genChart" class="col-sm-12 col-md-12">
+					<div id="genSelection">
+    				<strong>Genders</strong>
+   					<a class="reset" href="javascript:genChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   					<div class="clearfix"></div>
+					</div>
+				</div>
+
+
+				<div id="tierChart" class="col-sm-12 col-md-12">
+					<div id="tierSelection">
+    				<strong>Tiers</strong>
+   					<a class="reset" href="javascript:tierChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   					<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		
+
+
+		</div>	
+			
+
+		<div class="row jumbotron col-right">	
+			<div id="annotationChart" class="col-ms-12 col-md-12">
+				<div id="annotationSelection">
+    			<strong>Annotations</strong>
+   				 <a class="reset" href="javascript:annotationChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   			<div class="clearfix"></div>
+			</div>			
+			</div>
+		</div>
+		
+	</div>
+</body>
+</html>
+

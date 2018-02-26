@@ -1,0 +1,24 @@
+var timeChart = dc.pieChart("#timeChart");
+
+d3.json("http://localhost:3000/getTime", function(data) {
+	
+	var ndx = crossfilter(data);
+	
+  var topicDim = ndx.dimension(function(d){return d.TopicID});
+	var allTopics = topicDim.group();
+  var timeDim = topicDim.group().reduceSum(function(d) {return d.Duration;});
+  
+  timeChart
+    .width(200)
+    .height(200)
+    .innerRadius(40)
+    .dimension(allTopics)
+    .group(timeDim)
+    .legend(dc.legend())
+    // workaround for #703: not enough data is accessible through .label() to display percentages
+    .on('pretransition', function(timeChart) {
+        timeChart.selectAll('text.pie-slice').text(function(d) {
+            return d.data.key })
+    });
+  chart.render();
+});

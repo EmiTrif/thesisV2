@@ -1,0 +1,157 @@
+<!DOCTYPE Html>
+<html lang="en">
+
+<head>
+
+<title>DV</title>
+<meta charset="utf-8">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src='/javascripts/libraries/d3.js' type='text/javascript'></script>
+<script type="text/javascript" src='/javascripts/libraries/crossfilter.js' type='text/javascript'></script>
+<script type="text/javascript" src='/javascripts/libraries/dc.js' type='text/javascript'></script>
+
+<link href='/stylesheets/dc.css' rel='stylesheet' type='text/css'> 
+<link href='/stylesheets/style.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src='/javascripts/libraries/DynamicOptionList.js'></script>
+
+</head>
+
+<body onLoad="initDynamicOptionLists()">
+			<!-- Dashboard tab -->
+
+	<div class="container-fluid wrapper">
+	
+		
+		<div class="jumbotron row">
+			
+			<div id="timeChart" class="col-sm-12 col-md-12">
+				<div id="topicSelection">
+    			<strong>Time</strong>
+   				<a class="reset" href="javascript:timeChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>		
+		
+			<div id="topicChart" class="col-sm-12 col-md-12">
+				<div id="topicSelection">
+    			<strong>Topics</strong>
+   				<a class="reset" href="javascript:topicChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>
+			
+			<div id="tierChart" class="col-sm-12 col-md-12">
+				<div id="tierSelection">
+    			<strong>Tiers</strong>
+   				<a class="reset" href="javascript:tierChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   				<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+			
+			<script type="text/javascript" >
+			function myFunction(){
+				var el = document.getElementById("toggleForm");
+				el.classList.toggle("out");
+        if (el.classList.contains("out")) {
+            document.getElementById('arrow').src  = '/images/tout.png';
+        }
+         else {
+           document.getElementById('arrow').src = '/images/tin.png';
+       }	
+				}
+			</script>
+			
+		<div id="toggleForm" class= "jumbotron col-md-12 SF out">
+		
+			<div class="toggle" onclick="myFunction()"> <img id="arrow" src="/images/tout.png"></div>
+		<form type="submit" action="/submit" method="post">
+			<div  class="col-md-6">
+				
+				<select name="topicID" id="topicID">
+					<option selected="selected">T1</option>
+					<option>T2</option>
+					<option>T3</option>
+					<option>T4</option>
+					<option>T5</option>
+					<option>T6</option>
+					<option>T7</option>
+					<option>T8</option>
+					<option>T9</option>
+					<option>T10</option>
+					<option>T11</option>
+				</select>
+				<select name="topic2ID" id="topic2ID">
+					<option selected="selected">T1</option>
+					<option>T2</option>
+					<option>T3</option>
+					<option>T4</option>
+					<option>T5</option>
+					<option>T6</option>
+					<option>T7</option>
+					<option>T8</option>
+					<option>T9</option>
+					<option>T10</option>
+					<option>T11</option>
+				</select>
+			</div>
+			<div class="selection-container">
+		
+				<select name="tierID" id="tierID">
+					<option selected="selected">V_gaze</option>
+					<option>V_headshift</option>
+					<option>V_handshape</option>
+					<option>V_touchmotion</option>
+					<option>V_eyebrows</option>
+					<option>V_posture</option>
+				</select>
+		
+				<select name="annotationV" id="annotationV">	<option>forwards</option>		</select>
+				
+		
+				<select name="tier2ID" id="tier2ID">
+					<option selected="selected">V_gaze</option>
+					<option>V_headshift</option>
+					<option>V_handshape</option>
+					<option>V_touchmotion</option>
+					<option>V_eyebrows</option>
+					<option>V_posture</option>
+				</select>
+	
+				<select name="annotation2V" id="annotation2V">
+					<option>forwards</option>				
+				</select>
+			
+				<button class="Sbtn" type="submit" name="submit">Search</button>
+				<script type="text/javascript" src="/javascripts/controllers/dynamicSelection.js" ></script>
+			</div>
+		</form>	
+	</div> 		
+			
+
+		
+		<div class="row jumbotron">	
+			<div id="annotationChart" class="col-ms-12 col-md-12">
+				<div id="annotationSelection">
+    			<strong>Annotations</strong>
+   				 <a class="reset" href="javascript:annotationChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+   			<div class="clearfix"></div>
+			</div>			
+			</div>
+		</div>
+
+<!-- <script type="text/javascript" src='/javascripts/controllers/timechart.js'></script>  <!--chart for time measure-->
+-
+<		<script type="text/javascript" src='/javascripts/controllers/dashboard.js'></script> 
+-		<div class= "tab">
+	
+	
+		
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,275 @@
+var topicChart = dc.rowChart("#topicChart");
+var tierChart = dc.rowChart("#tierChart");	
+var annotationChart = dc.rowChart("#annotationChart");
+
+var timeChart = dc.pieChart("#timeChart");
+//fetch data 
+
+
+
+d3.json("http://localhost:3000/getData", function(data) {
+//	d3.json("http://localhost:3000/getTime", function(dt) {
+	
+	var ndx = crossfilter(data);
+	
+
+	function reduceAdd(p, v) {
+		 	console.log(v.TopicID);
+	    switch (v.TopicID){	   
+				case "T1": 	    
+	    		p.total += 206.886;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T2": 	    
+	    		p.total += 233.968;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T3": 	    
+	    		p.total += 140.579;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T4": 	    
+	    		p.total += 186.243;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T5": 	    
+	    		p.total += 62.356;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T6": 	    
+	    		p.total += 333.971;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T7": 	    
+	    		p.total += 98.512;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T8": 	    
+	    		p.total += 77.300;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T9": 	    
+	    		p.total += 262.748;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T10": 	    
+	    		p.total += 98.554;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T11": 	    
+	    		p.total += 132.446;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    	default :
+	    		p.total += 1;
+	    		++p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq = d3.round((p.count / p.average), 8);
+	    		break;
+	    	}	
+	    return p;
+	}
+
+	function reduceRemove(p, v) {
+		 switch (v.TopicId){
+								case "T1": 	    
+	    		p.total += 206.886;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T2": 	    
+	    		p.total += 233.968;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T3": 	    
+	    		p.total += 140.579;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T4": 	    
+	    		p.total += 186.243;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T5": 	    
+	    		p.total += 62.356;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T6": 	    
+	    		p.total += 333.971;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T7": 	    
+	    		p.total += 98.512;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T8": 	    
+	    		p.total += 77.300;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T9": 	    
+	    		p.total += 262.748;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T10": 	    
+	    		p.total += 98.554;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    		case "T11": 	    
+	    		p.total += 132.446;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq =  d3.round((p.count / p.average), 8);
+	    		break;
+	    	default :
+	    		p.total -= 1;
+	    		--p.count;
+	    		p.average = (p.total / p.count);
+	    		p.freq = d3.round((p.count / p.average), 8);
+	    		break;
+	    	}	
+	    return p;
+	}
+
+	function reduceInitial() {
+	    return {
+	        total: 0,
+	        count: 0,
+	        average: 0,
+	        freq: 0,
+	    };
+	}
+	
+  var topicTDim = ndx.dimension(function(d){return d.TopicID});
+  var timeDim = topicTDim.group().reduce(reduceAdd, reduceRemove, reduceInitial);
+
+  
+  timeChart
+    .width(200)
+    .height(200)
+    .innerRadius(40)
+    .dimension(topicTDim)
+    .group(timeDim)
+    .valueAccessor(function (p) {
+	    return p.value.freq;})
+    .legend(dc.legend())
+    // workaround for #703: not enough data is accessible through .label() to display percentages
+    .on('pretransition', function(timeChart) {
+        timeChart.selectAll('text.pie-slice').text(function(d) {return d.data.key})
+    });
+
+					
+	//pass data to crossfilter	
+//	var ndx = crossfilter(data);
+				
+	//create topic dimension
+	var topicDim = ndx.dimension(function(d){return d.TopicID});
+	var allTopics = topicDim.group();
+	
+	console.log(allTopics);
+
+	
+	var tierDim = ndx.dimension(function(d){ return d.TierID});
+	var allTiers = tierDim.group();
+	
+	//annotation dimention
+	var annotationDim = ndx.dimension(function(d){return d.annotationValue}); 
+	var allAnnotations = annotationDim.group();
+	
+	
+	
+	//remove empty bin function
+	function remove_empty_bins(source_group) {
+    return {
+        all:function () {
+            return source_group.all().filter(function(d) {
+                //return Math.abs(d.value) > 0.00001; // if using floating-point numbers
+                return d.value !== 0; // if integers only
+            });
+        }
+    };
+	}
+	
+	//var filteredGroup = remove_empty_bins(allAnnotations);
+
+	//set up topic chart	
+  topicChart
+  	.height(300)
+  	.dimension(topicDim)
+  	.elasticX(true)
+  	.group(allTopics);
+  	
+	//set up tier chart	
+  tierChart
+  	.dimension(tierDim)
+  	.elasticX(true)
+  	.group(allTiers);
+  	
+	//set up annotation chart
+	annotationChart
+		.height(1200)
+  	.dimension(annotationDim)
+  	.elasticX(true)
+  	.group(allAnnotations);
+               
+  dc.renderAll();
+
+	
+//---group data by topic id:	
+	//}); //----------end of timefunc
+			
+});	
+
+/*
+	//print filter to console -function
+	function print_filter(filter){
+		var f=eval(filter);
+		if (typeof(f.length) != "undefined") {}else{}
+		if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
+		if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
+		console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").replace(/}\,/g,"},\n\t").replace("]","\n]"));
+	} 
+
+	print_filter("allEntriesByTopic");
+*/	
+	
+																	

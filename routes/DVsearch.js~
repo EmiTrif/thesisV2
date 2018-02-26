@@ -1,0 +1,28 @@
+//dependencies
+var express = require('express');
+var async =  require('async');
+var router = express.Router();
+
+var ResultDB = require('../api/models/resultTemplate.js');
+
+//---------------------------------------- GET search page ----------------------------
+router.get('/', function(req, res, next) {
+	
+  res.render('DVsearch');
+});
+
+router.get('/load', function (req, res, next) {
+	res.render('load');
+});
+
+router.post('/load/submit', function (req, res, next) {
+	res.redirect('/DVsearch');
+});
+
+router.get('/submit', function(req, res, next){
+
+	res.redirect('/DVsearch/load');
+	res.redirect('/DVsearch/load');
+});
+
+module.exports = router;

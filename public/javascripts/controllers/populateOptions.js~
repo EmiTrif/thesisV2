@@ -1,0 +1,173 @@
+
+
+/*
+ -------------------------------------------------------
+ syntax 
+ MAIN.createRelatedSelector(
+    from   -> the filtering element           
+    to     -> the element for filtered options
+    obj    -> An object containing the options per
+              option of the filtering (from) element
+    [sort] -> optional sorting method for sorting
+              of the complete or filtered options list
+ --------------------------------------------------------
+*/
+
+//create the interdepent selectors
+function initSelectors(){
+ // next 2 statements should generate error message, see console
+ MAIN.createRelatedSelector(); 
+ MAIN.createRelatedSelector(document.querySelector('#continents') );
+ 
+ //countries
+ MAIN.createRelatedSelector
+     ( document.querySelector('#tierID')           // from select element
+      ,document.querySelector('#annotationV')      // to select element
+      ,{                                               // values object 
+        V_gaze: ["forwards", "left-down", "blink", "down", "right-down", "right", "left", "left-up", "up", "right-up"],
+        V_headshift: ["sideways+left", "sideways+right", "lower", "raise", "turn+left", "turn+right", "raise-turn+left", "raise+turn+right", "lower-turn+left", "lower-turn+right", "shake", "nod"]
+      }
+      ,function(a,b){return a>b ? 1 : a<b ? -1 : 0;}   // sort method
+ );
+/*
+ //numbers
+ MAIN.createRelatedSelector
+   (   document.querySelector('#oddeven')
+      ,document.querySelector('#numbers')
+      ,{
+        Odd: [1,3,5,7,9,11,13,15,17],
+        Even: [14,2,4,6,8,10,12,16],
+       }
+      ,function(a,b){ return +a - +b; }
+ );
+
+ // persons
+ MAIN.createRelatedSelector
+  (    document.querySelector('#malefemale')
+      ,document.querySelector('#names')
+      ,{
+        Female: ['Mary','Jeanette','Jo','Anne'],
+        Male: ['John','Charles','Edward','Jim'],
+       }
+ );
+ */
+}
+
+//create MAIN namespace
+(function(ns){ // don't pollute the global namespace
+    
+ function create(from, to, obj, srt){
+  if (!from) {
+         throw CreationError('create: parameter selector [from] missing');
+  }
+  if (!to) {
+         throw CreationError('create: parameter related selector [to] missing');
+  }
+  if (!obj) {
+         throw CreationError('create: related filter definition object [obj] missing');
+  }
+  
+  //retrieve all options from obj and add it
+  obj.all = (function(o){
+     var a = [];
+     for (var l in o) {
+       a = /array/i.test (o[l].constructor) ? a.concat(o[l]) : a;
+     }
+     return a.sort(srt);
+  }(obj));
+ // initialize and populate to-selector with all
+  populator.call( from
+                  ,null
+                  ,to
+                  ,obj
+                  ,srt
+  );
+    
+  // assign handler    
+  from.onchange = populator;
+
+  function initStatics(fn,obj){
+   for (var l in obj) {
+       if (obj.hasOwnProperty(l)){
+           fn[l] = obj[l];
+       }
+   }
+   fn.initialized = true;
+  }
+     
+ function populator(e, relatedto, obj, srt){
+    // set pseudo statics
+    var self = populator;
+    if (!self.initialized) {
+        initStatics(self,{optselects:obj,optselectsall:obj.all,relatedTo:relatedto,sorter:srt || false});
+    }
+     
+    if (!self.relatedTo){
+        throw 'not related to a selector';
+    }
+    // populate to-selector from filter/all
+    var optsfilter = this.selectedIndex < 1
+                   ? self.optselectsall 
+                   : self.optselects[this.options[this.selectedIndex].firstChild.nodeValue]
+       ,cselect = self.relatedTo
+       ,opts = cselect.options;
+    if (self.sorter) optsfilter.sort(self.sorter);
+    opts.length = 0;
+    for (var i=0;i<optsfilter.length;i+=1){
+        opts[i] = new Option(optsfilter[i],i);
+    }
+  }
+ }
+    
+ // custom Error
+ function CreationError(mssg){
+     return {name:'CreationError',message:mssg};
+ }
+
+ // return the create method with some error handling   
+ window[ns] = { 
+     createRelatedSelector: function(from,to,obj,srt) {
+          try { 
+              if (arguments.length<1) {
+                 throw CreationError('no parameters');
+              } 
+              create.call(null,from,to,obj,srt); 
+          } 
+          catch(e) { console.log('createRelatedSelector ->',e.name,'\n'
+                                   + e.message +
+                                   '\ncheck parameters'); }
+        }
+ };    
+}('MAIN'));
+//initialize
+initSelectors();
+
+
+/*
+.addOptions("sideways+left", "sideways+right", "lower", "raise", "turn+left", "turn+right", "raise-turn+left", "raise+turn+right", "lower-turn+left", "lower-turn+right", "shake", "nod");
+regionState.forValue("V_gaze").addOptions("forwards", "left-down", "blink", "down", "right-down", "right", "left", "left-up", "up", "right-up");
+regionState.forValue("V_handshape").addOptions("left-open-flat+right-open-flat", "left-half-open-flat+right-half-open-flat", "both-crossing-fingers", "left-open-spread+right-half-open-flat", "left-open-spread+right-open-spread", "left-half-open-flat+right-open-flat", "left-open-spread+right-open-flat", "both-other", "left-open-flat+right-half-open-flat", "left-fist+right-half-open-flat", "left-fist+right-open-flat");
+regionState.forValue("V_touchmotion").addOptions("left-tap+left-ear", "left-scratch+left-leg");
+regionState.forValue("V_eyebrows").addOptions("up+both", "scowl+both", "up+right", "up+left");
+regionState.forValue("V_posture").addOptions("len-back", "upright", "lean-forward");
+
+regionState.selectFirstOption = false;
+
+var headshiftOpts = {
+	a:"sideways+left", 
+	b:"sideways+right", 
+	c:"lower", 
+	d:"raise", 
+	e:"turn+left", 
+	f:"turn+right", 
+	g:"raise-turn+left", 
+	h:"raise+turn+right", 
+	i:"lower-turn+left", 
+	j:"lower-turn+right", 
+	k:"shake",
+	l: "nod"
+	
+};
+
+
+*/

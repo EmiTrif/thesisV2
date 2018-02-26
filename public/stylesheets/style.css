@@ -1,0 +1,40 @@
+.body{
+margin:0;
+padding: 0;
+}
+.wrapper {
+	width: 100%;
+}
+
+.row{
+display:inline-block;
+vertical-align: top;
+text-align: center;
+margin-left: 1%;
+margin-top: 1%;
+padding-top: 2em;
+}
+
+.col-left{
+width: 58%
+}
+
+.col-right{
+width: 37%;
+padding-left: 0;
+}
+
+.mini{
+    width:50%;
+}
+
+.dc-chart g.row text {fill: black;}
+
+.dc-legend-item{
+	display:none;
+}
+
+
+#genChart #timeChart #annotationChart{
+margin-left: -2em;
+}
