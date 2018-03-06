@@ -30,38 +30,38 @@ var subjCH = subjHightDef;
 
 var SOptions = {
 	FGaze : {
-		col : "https://thesisv2.herokuapp/GazeF",
+		col : "https://thesisv2.herokuapp.com/GazeF",
 		annCH : 350},	
 	IGaze : {
-		col : "https://thesisv2.herokuapp/GazeI",
+		col : "https://thesisv2.herokuapp.com/GazeI",
 		annCH : 400},
 	FHead : {
-		col : "https://thesisv2.herokuapp/HeadF",
+		col : "https://thesisv2.herokuapp.com/HeadF",
 		annCH : 550 },
 	IHead : {
-		col : "https://thesisv2.herokuapp/HeadI",
+		col : "https://thesisv2.herokuapp.com/HeadI",
 		annCH : 700 },
 	FHand : {
-		col : "https://thesisv2.herokuapp/HandF",
+		col : "https://thesisv2.herokuapp.com/HandF",
 		annCH : 800 },
 	IHand : {
-		col : "https://thesisv2.herokuapp/HandI", 
+		col : "https://thesisv2.herokuapp.com/HandI", 
 		annCH : 1500 },	
 	FTouch : {
-		col : "https://thesisv2.herokuapp/TouchF",
+		col : "https://thesisv2.herokuapp.com/TouchF",
 		annCH : 700 },
 	ITouch : {
-		col : "https://thesisv2.herokuapp/TouchI",
+		col : "https://thesisv2.herokuapp.com/TouchI",
 		annCH : 900 },
 	FPosture : {
-		col : "https://thesisv2.herokuapp/PostureF",
+		col : "https://thesisv2.herokuapp.com/PostureF",
 		annCH : 300 },
 	IPosture : {
-		col : "https://thesisv2.herokuapp/PostureI",
+		col : "https://thesisv2.herokuapp.com/PostureI",
 		annCH : 350 },
 
 	F013:	{
-		col: "https://thesisv2.herokuapp/S013F",
+		col: "https://thesisv2.herokuapp.com/S013F",
 		annCH : 1400,
 		time : {
 			T1 : 32.594,
@@ -78,7 +78,7 @@ var SOptions = {
 		}
 	},
 	I013:	{
-		col: "https://thesisv2.herokuapp/S013I",
+		col: "https://thesisv2.herokuapp.com/S013I",
 		annCH : 1200,
 		time : {
 			T1 : 161.248,
@@ -91,7 +91,7 @@ var SOptions = {
 		}
 	},
 	F040:	{
-		col: "https://thesisv2.herokuapp/S040F",
+		col: "https://thesisv2.herokuapp.com/S040F",
 		annCH : 900,
 		time : {
 			T1 : 68.539,
@@ -108,7 +108,7 @@ var SOptions = {
 		}
 	},
 	I040:	{
-		col: "https://thesisv2.herokuapp/S040I",
+		col: "https://thesisv2.herokuapp.com/S040I",
 		annCH : 1200,
 		time : {
 			T1 : 227.643,
@@ -121,7 +121,7 @@ var SOptions = {
 		}
 	},
 	F061:	{
-		col: "https://thesisv2.herokuapp/S061F",
+		col: "https://thesisv2.herokuapp.com/S061F",
 		annCH : 1000,
 		time: {
 			T1 : 104.605,
@@ -138,7 +138,7 @@ var SOptions = {
 		}
 	},
 	I061:	{
-		col: "https://thesisv2.herokuapp/S061I",
+		col: "https://thesisv2.herokuapp.com/S061I",
 		annCH : 1800,
 		time : {
 			T1 : 119.360,
@@ -152,7 +152,7 @@ var SOptions = {
 		}
 	},
 	F065:	{
-		col: "https://thesisv2.herokuapp/S065F",
+		col: "https://thesisv2.herokuapp.com/S065F",
 		annCH : 1600,
 		time: {
 			T1 : 97.659,
@@ -169,7 +169,7 @@ var SOptions = {
 		}
 	},
 	I065:	{
-		col: "https://thesisv2.herokuapp/S065I",
+		col: "https://thesisv2.herokuapp.com/S065I",
 		annCH : 1800,
 		time : {
 			T1 : 167.888,
@@ -182,7 +182,7 @@ var SOptions = {
 		}
 	},
 	F074:	{
-		col: "https://thesisv2.herokuapp/S074F",
+		col: "https://thesisv2.herokuapp.com/S074F",
 		annCH : 900,
 		time : {
 			T1 : 62.888,
@@ -199,7 +199,7 @@ var SOptions = {
 		}
 	},
 	I074:	{
-		col: "https://thesisv2.herokuapp/S074I",
+		col: "https://thesisv2.herokuapp.com/S074I",
 		annCH : 1600,
 		time : {
 			T1 : 163.265,
@@ -212,7 +212,7 @@ var SOptions = {
 		}
 	},
 	F077:	{
-		col: "https://thesisv2.herokuapp/S077F",
+		col: "https://thesisv2.herokuapp.com/S077F",
 		annCH : 1200,
 		time: {
 			T1 : 68.787,
@@ -229,7 +229,7 @@ var SOptions = {
 		}
 	},
 	I077:	{
-		col: "https://thesisv2.herokuapp/S077I",
+		col: "https://thesisv2.herokuapp.com/S077I",
 		annCH : 1800,
 		time : {
 			T1 : 121.257,
@@ -242,7 +242,7 @@ var SOptions = {
 		}
 	},
 	F079:	{
-		col: "https://thesisv2.herokuapp/S079F",
+		col: "https://thesisv2.herokuapp.com/S079F",
 		annCH : 900,
 		time: {
 			T1 : 84.344,
@@ -259,7 +259,7 @@ var SOptions = {
 		}
 	},
 	I079:	{
-		col: "https://thesisv2.herokuapp/S079I",
+		col: "https://thesisv2.herokuapp.com/S079I",
 		annCH : 1200,
 		time : {
 			T1 : 113.167,
@@ -272,7 +272,7 @@ var SOptions = {
 		}
 	},
 	F090:	{
-		col: "https://thesisv2.herokuapp/S090F",
+		col: "https://thesisv2.herokuapp.com.com/S090F",
 		annCH : 900,
 		time :{
 			T1 : 74.705,
@@ -289,7 +289,7 @@ var SOptions = {
 		}
 	},
 	I090:	{
-		col: "https://thesisv2.herokuapp/S090I",
+		col: "https://thesisv2.herokuapp.com.com/S090I",
 		annCH : 2600,
 		time : {
 			T1 : 198.914,
@@ -302,7 +302,7 @@ var SOptions = {
 		}
 	},
 	F108:	{
-		col: "https://thesisv2.herokuapp/S108F",
+		col: "https://thesisv2.herokuapp.com.com/S108F",
 		annCH : 1600,
 		time : {
 			T1 : 60.762,
@@ -319,7 +319,7 @@ var SOptions = {
 		}
 	},
 	I108:	{
-		col: "https://thesisv2.herokuapp/S108I",
+		col: "https://thesisv2.herokuapp.com.com/S108I",
 		annCH : 1600,
 		time : {
 			T1 : 46.057,
@@ -332,7 +332,7 @@ var SOptions = {
 		}
 	},
 	F121:	{
-		col: "https://thesisv2.herokuapp/S121F",
+		col: "https://thesisv2.herokuapp.com.com/S121F",
 		annCH : 1200,
 		time : {
 			T1 : 92.828,
@@ -349,7 +349,7 @@ var SOptions = {
 		}
 	},
 	I121:	{
-		col: "https://thesisv2.herokuapp/S121I",
+		col: "https://thesisv2.herokuapp.com.com/S121I",
 		annCH : 1400,
 		time : {
 			T1 : 98.282,
