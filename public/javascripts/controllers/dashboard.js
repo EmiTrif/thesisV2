@@ -109,10 +109,10 @@ var SOptions = {
 		annCH : 350 },
 	FF0Mov : {
 		col : "https://thesisv2.herokuapp.com/F0MovF",
-		annCH : 600 },
+		annCH : 400 },
 	IF0Mov : {
 		col : "https://thesisv2.herokuapp.com/F0MovI",
-		annCH : 650 },								
+		annCH : 450 },								
 	FF0Lvl : {
 		col : "http://thesisv2.herokuapp.com/F0LvlF",
 		annCH : 600 },

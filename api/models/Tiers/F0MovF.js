@@ -14,4 +14,4 @@ var f0movFSchema = new Schema({
 	timeEt: {type: Number, index: true}
 });
 
-module.exports = mongoose.model('f0movFSchema', f0movFSchema, 'FF0MOv');
+module.exports = mongoose.model('f0movFSchema', f0movFSchema, 'FF0Mov');
