@@ -107,6 +107,18 @@ var SOptions = {
 	IDeictic : {
 		col : "https://thesisv2.herokuapp.com/DeicticI",
 		annCH : 350 },
+	FF0Mov : {
+		col : "https://thesisv2.herokuapp.com/F0MovF",
+		annCH : 600 },
+	IF0Mov : {
+		col : "https://thesisv2.herokuapp.com/F0MovI",
+		annCH : 650 },								
+	FF0Lvl : {
+		col : "http://thesisv2.herokuapp.com/F0LvlF",
+		annCH : 600 },
+	IF0Lvl : {
+		col : "https://thesisv2.herokuapp.com/F0LvlI",
+		annCH : 650 },	
 
 	F015:	{
 		col: "https://thesisv2.herokuapp.com/S015F",
