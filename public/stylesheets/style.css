@@ -35,6 +35,10 @@ padding-left: 0;
 }
 
 
-#genChart #timeChart #annotationChart{
+#subjChart, #timeChart, #annotationChart{
 margin-left: -2em;
+}
+
+#tierChart, #subjChart{
+margin-top: 2em;
 }
