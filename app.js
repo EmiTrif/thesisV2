@@ -98,8 +98,6 @@ app.use('/DeicticF', getDeicticF);
 app.use('/DeicticI', getDeicticI);
 app.use('/F0MovF', getF0MovF);
 app.use('/F0MovI', getF0MovI);
-app.use('/F0ValF', getF0ValF);
-app.use('/F0ValI', getF0ValI);
 app.use('/F0LvlF', getF0LvlF);
 app.use('/F0LvlI', getF0LvlI);
 
