@@ -31,7 +31,7 @@ padding-left: 0;
 .dc-chart g.row text {fill: black;}
 
 .dc-legend-item{
-	display:none;
+display:none;
 }
 
 
@@ -41,4 +41,17 @@ margin-left: -2em;
 
 #tierChart, #subjChart{
 margin-top: 2em;
+}
+
+#nav ul{
+display: block;
+width: 70%;
+margin: auto;
+}
+
+#nav li{
+display: block;
+float: left;
+list-style: none;
+margin-right: 8em;
 }
