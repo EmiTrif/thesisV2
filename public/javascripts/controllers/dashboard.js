@@ -7139,15 +7139,15 @@ d3.json(SOptions[SIndex].col, function(data) {
     .legend(dc.legend());
     // workaround for #703: not enough data is accessible through .label() to display percentages
 
- // var gen2Dim = ndx.dimension(function(d){return d.gender});
-  var gen2Group = genDim.group().reduce(reduceGen2Add, reduceGen2Remove, reduceGen2Initial);
+  var gen2Dim = ndx.dimension(function(d){return d.gender});
+  var gen2Group = gen2Dim.group().reduce(reduceGen2Add, reduceGen2Remove, reduceGen2Initial);
 
   genChart2
     .width(100)
     .height(100)
     .innerRadius(20)
     .minAngleForLabel(0.1)
-    .dimension(genDim)
+    .dimension(gen2Dim)
     .group(gen2Group)
     .valueAccessor(function (p) {
 	    return p.value.freq;})

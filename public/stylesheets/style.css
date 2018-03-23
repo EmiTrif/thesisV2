@@ -55,3 +55,7 @@ float: left;
 list-style: none;
 margin-right: 8em;
 }
+
+.genselection2 strong{
+	text-align: left;
+}
