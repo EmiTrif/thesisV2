@@ -452,7 +452,7 @@ function detTimeAdd(p, v){
 		if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.F015.time.T1 + SOptions.F020.time.T1 + SOptions.F065.time.T1 + SOptions.F079.time.T1 + SOptions.F090.time.T1 + SOptions.F019.time.T1 + SOptions.F043.time.T1 + SOptions.F074.time.T1 + SOptions.F077.time.T1 +  SOptions.F108.time.T1;}
 		} else if (v.Formal == "I"){
 			++p.countT1;
-			if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+			if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.I015.time.T1 + SOptions.I019.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
 		} 
 		break;
 		case "T2":
@@ -461,26 +461,26 @@ function detTimeAdd(p, v){
 		if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.F015.time.T2 + SOptions.F020.time.T2 + SOptions.F065.time.T2 + SOptions.F079.time.T2 + SOptions.F090.time.T2 + SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2;}
 		} else if (v.Formal == "I"){
 			++p.countT2;
-			if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		} 
+			if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.I015.time.T2 + SOptions.I019.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}		
+		}
 		break;
 		case "T3":
 		if (v.Formal == "F"){
 		++p.countT3;
-		if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F015.time.T3 + SOptions.F020.time.T3 + SOptions.F065.time.T3  + SOptions.F079.time.T3 + SOptions.F090.time.T3 + SOptions.F019.time.T3 + SOptions.F043.time.T3 + SOptions.F074.time.T3 + SOptions.F077.time.T3 +  SOptions.F108.time.T3;}
+		if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F015.time.T3 + SOptions.F020.time.T3 + SOptions.F065.time.T3 + SOptions.F079.time.T3 + SOptions.F090.time.T3 + SOptions.F019.time.T3 + SOptions.F043.time.T3 + SOptions.F074.time.T3 + SOptions.F077.time.T3 +  SOptions.F108.time.T3;}
 		} else if (v.Formal == "I"){
 			++p.countT3;
-			if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.I015.time.T3 + SOptions.I019.time.T3 + SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
 		} 
 		break;
 		case "T4":
 		if (v.Formal == "F"){
 		++p.countT4;
-		if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F015.time.T4 + SOptions.F020.time.T4 + SOptions.F065.time.T4  + SOptions.F079.time.T4 + SOptions.F090.time.T4 + SOptions.F019.time.T4 + SOptions.F043.time.T4 + SOptions.F074.time.T4 + SOptions.F077.time.T4 +  SOptions.F108.time.T4;}
+		if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F015.time.T4 + SOptions.F020.time.T4 + SOptions.F065.time.T4 + SOptions.F079.time.T4 + SOptions.F090.time.T4 + SOptions.F019.time.T4 + SOptions.F043.time.T4 + SOptions.F074.time.T4 + SOptions.F077.time.T4 +  SOptions.F108.time.T4;}
 		} else if (v.Formal == "I"){
 			++p.countT4;
-			if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		} 
+			if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.I015.time.T4 + SOptions.I019.time.T4 + SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}		
+		}  
 		break;
 		case "T5":
 		if (v.Formal == "F"){
@@ -489,16 +489,16 @@ function detTimeAdd(p, v){
 		//console.log(p.countT5 + ":" + p.timeT5 );
 		} else if (v.Formal == "I"){
 			++p.countT5;
-			if (p.countT5 == 0){p.timeT5 = 0} else {p.timeT5 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		}	
+			if (p.countT5 == 0){p.timeT5 = 0} else {p.timeT5 = SOptions.I015.time.T5 + SOptions.I019.time.T5 + SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}		
+		} 
 		break;
-			case "T6":
+		case "T6":
 		if (v.Formal == "F"){
 		++p.countT6;
 		if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.F015.time.T6 + SOptions.F020.time.T6 + SOptions.F065.time.T6  + SOptions.F079.time.T6 + SOptions.F090.time.T6 + SOptions.F019.time.T6 + SOptions.F043.time.T6 + SOptions.F074.time.T6 + SOptions.F077.time.T6 +  SOptions.F108.time.T6;}
 		} else if (v.Formal == "I"){
 			++p.countT6;
-			if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.I015.time.T6 + SOptions.I019.time.T6 + SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}		
 		} 
 		break;
 		case "T7":
@@ -507,7 +507,7 @@ function detTimeAdd(p, v){
 		if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.F015.time.T7 + SOptions.F020.time.T7 + SOptions.F065.time.T7  + SOptions.F079.time.T7 + SOptions.F090.time.T7 + SOptions.F019.time.T7 + SOptions.F043.time.T7 + SOptions.F074.time.T7 + SOptions.F077.time.T7 +  SOptions.F108.time.T7;}
 		} else if (v.Formal == "I"){
 			++p.countT7;
-			if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.I015.time.T7 + SOptions.I019.time.T7 + SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}		
 		} 
 		break;
 		case "T8":
@@ -524,24 +524,24 @@ function detTimeAdd(p, v){
 		break;
 		case "T11":
 		++p.countT11;
-		if (p.counTt11 == 0){p.timeT11 = 0} else {p.timeT11 = SOptions.F015.time.T11 + SOptions.F020.time.T11 + SOptions.F065.time.T11 + SOptions.F079.time.T11 + SOptions.F090.time.T11 + SOptions.F019.time.T11 + SOptions.F043.time.T11 + SOptions.F074.time.T11 + SOptions.F077.time.T11 +  SOptions.F108.time.T11;}
+		if (p.counT11 == 0){p.timeT11 = 0} else {p.timeT11 = SOptions.F015.time.T11 + SOptions.F020.time.T11 + SOptions.F065.time.T11 + SOptions.F079.time.T11 + SOptions.F090.time.T11 + SOptions.F019.time.T11 + SOptions.F043.time.T11 + SOptions.F074.time.T11 + SOptions.F077.time.T11 +  SOptions.F108.time.T11;}
 		break;
 	}
-	p.count = p.countT1+p.countT2+p.countT3+p.countT3+p.countT4+p.countT4+p.countT5+p.countT6+p.countT7+p.countT8+p.countT9+p.countT10+p.countT11; 
+	p.count = p.countT1+p.countT2+p.countT3+p.countT4+p.countT5+p.countT6+p.countT7+p.countT8+p.countT9+p.countT10+p.countT11; 
 	p.time = p.timeT1+p.timeT2+p.timeT3+p.timeT4+p.timeT5+p.timeT6+p.timeT7+p.timeT8+p.timeT9+p.timeT10+p.timeT11;
 	//console.log(p.timeT1 + " "+p.timeT2+" "+p.timeT3+" "+p.timeT4+" "+p.timeT5+" "+p.timeT6+" "+p.timeT7+" "+p.timeT8+" "+p.timeT9+" "+p.timeT10+" "+p.timeT11);
 	if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; //console.log(p.count + " : "+ p.time);
 }
 
 function detTimeRemove(p, v){			
-	switch (v.TopicID){
+		switch (v.TopicID){
 		case "T1":
 		if (v.Formal == "F"){
 		--p.countT1;
 		if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.F015.time.T1 + SOptions.F020.time.T1 + SOptions.F065.time.T1 + SOptions.F079.time.T1 + SOptions.F090.time.T1 + SOptions.F019.time.T1 + SOptions.F043.time.T1 + SOptions.F074.time.T1 + SOptions.F077.time.T1 +  SOptions.F108.time.T1;}
 		} else if (v.Formal == "I"){
 			--p.countT1;
-			if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+			if (p.countT1 == 0){p.timeT1 = 0} else {p.timeT1 = SOptions.I015.time.T1 + SOptions.I019.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
 		} 
 		break;
 		case "T2":
@@ -549,27 +549,27 @@ function detTimeRemove(p, v){
 		--p.countT2;
 		if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.F015.time.T2 + SOptions.F020.time.T2 + SOptions.F065.time.T2 + SOptions.F079.time.T2 + SOptions.F090.time.T2 + SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2;}
 		} else if (v.Formal == "I"){
-			++p.countT2;
-			if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		} 
+			--p.countT2;
+			if (p.countT2 == 0){p.timeT2 = 0} else {p.timeT2 = SOptions.I015.time.T2 + SOptions.I019.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}		
+		}
 		break;
 		case "T3":
 		if (v.Formal == "F"){
 		--p.countT3;
-		if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F015.time.T3 + SOptions.F020.time.T3 + SOptions.F065.time.T3  + SOptions.F079.time.T3 + SOptions.F090.time.T3 + SOptions.F019.time.T3 + SOptions.F043.time.T3 + SOptions.F074.time.T3 + SOptions.F077.time.T3 +  SOptions.F108.time.T3;}
+		if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F015.time.T3 + SOptions.F020.time.T3 + SOptions.F065.time.T3 + SOptions.F079.time.T3 + SOptions.F090.time.T3 + SOptions.F019.time.T3 + SOptions.F043.time.T3 + SOptions.F074.time.T3 + SOptions.F077.time.T3 +  SOptions.F108.time.T3;}
 		} else if (v.Formal == "I"){
 			--p.countT3;
-			if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT3 == 0){p.timeT3 = 0} else {p.timeT3 = SOptions.I015.time.T3 + SOptions.I019.time.T3 + SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
 		} 
 		break;
 		case "T4":
 		if (v.Formal == "F"){
 		--p.countT4;
-		if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F015.time.T4 + SOptions.F020.time.T4 + SOptions.F065.time.T4  + SOptions.F079.time.T4 + SOptions.F090.time.T4 + SOptions.F019.time.T4 + SOptions.F043.time.T4 + SOptions.F074.time.T4 + SOptions.F077.time.T4 +  SOptions.F108.time.T4;}
+		if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F015.time.T4 + SOptions.F020.time.T4 + SOptions.F065.time.T4 + SOptions.F079.time.T4 + SOptions.F090.time.T4 + SOptions.F019.time.T4 + SOptions.F043.time.T4 + SOptions.F074.time.T4 + SOptions.F077.time.T4 +  SOptions.F108.time.T4;}
 		} else if (v.Formal == "I"){
 			--p.countT4;
-			if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		} 
+			if (p.countT4 == 0){p.timeT4 = 0} else {p.timeT4 = SOptions.I015.time.T4 + SOptions.I019.time.T4 + SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}		
+		}	
 		break;
 		case "T5":
 		if (v.Formal == "F"){
@@ -578,16 +578,16 @@ function detTimeRemove(p, v){
 		//console.log(p.countT5 + ":" + p.timeT5 );
 		} else if (v.Formal == "I"){
 			--p.countT5;
-			if (p.countT5 == 0){p.timeT5 = 0} else {p.timeT5 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-		}	
+			if (p.countT5 == 0){p.timeT5 = 0} else {p.timeT5 = SOptions.I015.time.T5 + SOptions.I019.time.T5 + SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}		
+		} 
 		break;
-			case "T6":
+		case "T6":
 		if (v.Formal == "F"){
 		--p.countT6;
 		if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.F015.time.T6 + SOptions.F020.time.T6 + SOptions.F065.time.T6  + SOptions.F079.time.T6 + SOptions.F090.time.T6 + SOptions.F019.time.T6 + SOptions.F043.time.T6 + SOptions.F074.time.T6 + SOptions.F077.time.T6 +  SOptions.F108.time.T6;}
 		} else if (v.Formal == "I"){
 			--p.countT6;
-			if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT6 == 0){p.timeT6 = 0} else {p.timeT6 = SOptions.I015.time.T6 + SOptions.I019.time.T6 + SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}		
 		} 
 		break;
 		case "T7":
@@ -596,7 +596,7 @@ function detTimeRemove(p, v){
 		if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.F015.time.T7 + SOptions.F020.time.T7 + SOptions.F065.time.T7  + SOptions.F079.time.T7 + SOptions.F090.time.T7 + SOptions.F019.time.T7 + SOptions.F043.time.T7 + SOptions.F074.time.T7 + SOptions.F077.time.T7 +  SOptions.F108.time.T7;}
 		} else if (v.Formal == "I"){
 			--p.countT7;
-			if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+			if (p.countT7 == 0){p.timeT7 = 0} else {p.timeT7 = SOptions.I015.time.T7 + SOptions.I019.time.T7 + SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}		
 		} 
 		break;
 		case "T8":
@@ -616,10 +616,10 @@ function detTimeRemove(p, v){
 		if (p.countT11 == 0){p.timeT11 = 0} else {p.timeT11 = SOptions.F015.time.T11 + SOptions.F020.time.T11 + SOptions.F065.time.T11 + SOptions.F079.time.T11 + SOptions.F090.time.T11 + SOptions.F019.time.T11 + SOptions.F043.time.T11 + SOptions.F074.time.T11 + SOptions.F077.time.T11 +  SOptions.F108.time.T11;}
 		break;
 	}
-	p.count = p.countT1+p.countT2+p.countT3+p.countT3+p.countT4+p.countT4+p.countT5+p.countT6+p.countT7+p.countT8+p.countT9+p.countT10+p.countT11; 
+	p.count = p.countT1+p.countT2+p.countT3+p.countT4+p.countT5+p.countT6+p.countT7+p.countT8+p.countT9+p.countT10+p.countT11; 
 	p.time = p.timeT1+p.timeT2+p.timeT3+p.timeT4+p.timeT5+p.timeT6+p.timeT7+p.timeT8+p.timeT9+p.timeT10+p.timeT11;
 	//console.log(p.timeT1 + " "+p.timeT2+" "+p.timeT3+" "+p.timeT4+" "+p.timeT5+" "+p.timeT6+" "+p.timeT7+" "+p.timeT8+" "+p.timeT9+" "+p.timeT10+" "+p.timeT11);
-	if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; //console.log(p.count + " :: "+ p.time);
+	if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; //console.log(p.countT11 + " : "+ p.time);
 }
 
 //fetch data
@@ -726,7 +726,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I019.time.T1 +SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};
 			} 
 			break;
@@ -737,7 +737,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T2 + SOptions.I019.time.T2 +SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -748,7 +748,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T3 + SOptions.I019.time.T3 +SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -759,7 +759,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; //console.log(p.time);
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T4 + SOptions.I019.time.T4 +SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; 
 			} 
 			break;
@@ -770,7 +770,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};	//console.log("2::"+ p.count+" "+p.time);	
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T5 + SOptions.I019.time.T5 +SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			}	
 			break;
@@ -781,7 +781,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T6 + SOptions.I019.time.T6 +SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -792,7 +792,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				++p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T7 + SOptions.I019.time.T7 + SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -829,7 +829,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I019.time.T1 +SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};
 			} 
 			break;
@@ -840,7 +840,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T1 + SOptions.I019.time.T2 +SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -851,7 +851,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T3 + SOptions.I019.time.T3 +SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -859,32 +859,32 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (v.Formal == "F"){
 			--p.count;
 			if (p.count == 0){p.time = 0} else {p.time = SOptions.F015.time.T4 + SOptions.F020.time.T4 + SOptions.F065.time.T4  + SOptions.F079.time.T4 + SOptions.F090.time.T4 + SOptions.F019.time.T4 + SOptions.F043.time.T4 + SOptions.F074.time.T4 + SOptions.F077.time.T4 +  SOptions.F108.time.T4;}
-			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
+			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; //console.log(p.time);
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
-				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T4 + SOptions.I019.time.T4 +SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}
+				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);}; 
 			} 
 			break;
 			case "T5":
 			if (v.Formal == "F"){
 			--p.count;
 			if (p.count == 0){p.time = 0} else {p.time = SOptions.F015.time.T5 + SOptions.F020.time.T5 + SOptions.F065.time.T5  + SOptions.F079.time.T5 + SOptions.F090.time.T5 + SOptions.F019.time.T5 + SOptions.F043.time.T5 + SOptions.F074.time.T5 + SOptions.F077.time.T5 +  SOptions.F108.time.T5;}
-			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};	//console.log("2::"+ p.count+" "+p.time);		
+			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};	//console.log("2::"+ p.count+" "+p.time);	
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.I019.time.T2 + SOptions.I043.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 +  SOptions.I108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time =  SOptions.I015.time.T5 + SOptions.I019.time.T5 +SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
-			}
+			}	
 			break;
-			case "T6":
+	  		case "T6":
 			if (v.Formal == "F"){
 			--p.count;
 			if (p.count == 0){p.time = 0} else {p.time = SOptions.F015.time.T6 + SOptions.F020.time.T6 + SOptions.F065.time.T6  + SOptions.F079.time.T6 + SOptions.F090.time.T6 + SOptions.F019.time.T6 + SOptions.F043.time.T6 + SOptions.F074.time.T6 + SOptions.F077.time.T6 +  SOptions.F108.time.T6;}
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T6 + SOptions.I019.time.T6 +SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -895,7 +895,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} else if (v.Formal == "I"){
 				--p.count;
-				if (p.count == 0){p.time = 0} else {p.timeI = SOptions.F019.time.T2 + SOptions.F043.time.T2 + SOptions.F074.time.T2 + SOptions.F077.time.T2 +  SOptions.F108.time.T2 + SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T7 + SOptions.I019.time.T7 +SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}
 				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
@@ -2940,8 +2940,8 @@ d3.json(SOptions[SIndex].col, function(data) {
 						p.timeT5I = SOptions.I015.time.T5 + SOptions.I020.time.T5 + SOptions.I065.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5;
 						break;
 						case "T6":
-						++p.countT674
-						p.timeT6I = SOp77ons.I015.time.T6 + SO108ons.I020.time.T6 + SOptions.I065.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6;
+						++p.countT6I
+						p.timeT6I = SOptions.I015.time.T6 + SOptions.I020.time.T6 + SOptions.I065.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6;
 						break;
 						case "T7":
 						++p.countT7I;
@@ -2949,15 +2949,16 @@ d3.json(SOptions[SIndex].col, function(data) {
 						break;
 					}
 	    			p.countI = p.countT1I+p.countT2I+p.countT3I+p.countT4I+p.countT5I+p.countT6I+p.countT7I;
-		    		//console.log(p.time015F+":013 "+p.time015I+" "+p.time019F+":040 "+p.time074I+" "+p.time020F+":061 "+p.time020I+" "+p.time065F+":065 "+p.time065I+" "+p.time074F+":074 "+p.time074I+" "+p.time077F+":077 "+p.time077I+" "+p.time079F+":079"+p.time079I+" "+p.time090F+":090 "+p.time090I+" "+p.time108F+":108 "+p.time108I+" "+p.time043F+":121 "+p.time043I+"\n");
-		    		p.timeI = p.timeT1I+p.timeT2I+p.timeT3I+p.timeT4I+p.timeT5I+p.timeT6I+p.timeT7I;
+	    			//console.log(p.timeT1I+":t1 "+p.timeT2I+":t2 "+p.timeT3I+":t3 "+p.timeT4I+":t4 "+p.timeT5I+":t5 "+p.timeT6I+":t6 "+p.timeT7I+":t7 "+p.timeT8I+":t8 "+p.timeT9I+":t9 "+p.timeT10I+":t10 "+p.timeT11I+":t11 "+"\n");
+		    		//console.log(p.time015I+":013 "+p.time015I+" "+p.time019F+":040 "+p.time074I+" "+p.time020F+":061 "+p.time020I+" "+p.time065F+":065 "+p.time065I+" "+p.time074F+":074 "+p.time074I+" "+p.time077F+":077 "+p.time077I+" "+p.time079F+":079"+p.time079I+" "+p.time090F+":090 "+p.time090I+" "+p.time108F+":108 "+p.time108I+" "+p.time043F+":121 "+p.time043I+"\n");
+		    		//console.log(p.countT1I+":t1 "+p.countT2I+":t2 "+p.countT3I+":t3 "+p.countT4I+":t4 "+p.countT5I+":t5 "+p.countT6I+":t6 "+p.countT7I+":t7 "+p.countT8I+":t8 "+p.countT9I+":t9 "+p.countT10I+":t10 "+p.countT11I+":t11 "+"\n");
+		    		p.timeI = p.timeT1I+p.timeT2I+p.timeT3I+p.timeT4I+p.timeT5I+p.timeT6I+p.timeT7I; 
 		    		break;
 		    		case "F":
 					switch (v.TopicID){
 						case "T1":
 						++p.countT1F;
 						p.timeT1F = SOptions.F015.time.T1 + SOptions.F020.time.T1 + SOptions.F065.time.T1 + SOptions.F079.time.T1 + SOptions.F090.time.T1;
-						
 						break;
 						case "T2":
 						++p.countT2F;
@@ -3001,12 +3002,12 @@ d3.json(SOptions[SIndex].col, function(data) {
 						break;
 					}
 	    			p.countF = p.countT1F+p.countT2F+p.countT3F+p.countT4F+p.countT5F+p.countT6F+p.countT7F+p.countT8F+p.countT9F+p.countT10F+p.countT11F;
-		    		//console.log(p.timeT1F+":t1 "+p.timeT2F+":t2 "+p.timeT3F+":t3 "+p.timeT4F+":t4 "+p.timeT5F+":t5 "+p.timeT6F+":t6 "+p.timeT7F+":t7 "+p.timeT8F+":t8 "+p.timeT9F+":t9 "+p.timeT10F+":t10 "+p.timeT11F+":t11 "+"\n");
+		    		//console.log(p.countT1F+":t1 "+p.countT2F+":t2 "+p.countT3F+":t3 "+p.countT4F+":t4 "+p.countT5F+":t5 "+p.countT6F+":t6 "+p.countT7F+":t7 "+p.countT8F+":t8 "+p.countT9F+":t9 "+p.countT10F+":t10 "+p.countT11F+":t11 "+"\n");
 		    		p.timeF = p.timeT1F+p.timeT2F+p.timeT3F+p.timeT4F+p.timeT5F+p.timeT6F+p.timeT7F+p.timeT8F+p.timeT9F+p.timeT10F+p.timeT11F
 		    		break;
 				}//switch v.Formal
 				p.count = p.countF+p.countI; //console.log(p.countF);
-				time = p.timeF+p.timeI;
+				time = p.timeF+p.timeI; //console.log(time+" : "+p.count);
 
 				if (time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);}; 
 				//console.log(p.freq+"\n"); 
@@ -3102,7 +3103,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 		    		break;
 				}//switch v.Formal
 				p.count = p.countF+p.countI; 
-				time = p.timeF+p.timeI; 
+				time = p.timeF+p.timeI; //console.log(time+" : "+p.count);
 
 				if (time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);}; 
 				//console.log(p.freq+"\n"); 
@@ -3119,35 +3120,36 @@ d3.json(SOptions[SIndex].col, function(data) {
 					switch (v.TopicID){
 						case "T1":
 						--p.countT1I;
-						if (p.countT1F == 0){p.timeT1F = 0} else {p.timeT1I = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+						if (p.countT1I == 0){p.timeT1I = 0} else {p.timeT1I = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I065.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1;}
 						break;
 						case "T2":
 						--p.countT2I;
-						if (p.countT2F == 0){p.timeT2F = 0} else {p.timeT2I = SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+						if (p.countT2I == 0){p.timeT2I = 0} else {p.timeT2I = SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I065.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2;}
 						break;
 						case "T3":
 						--p.countT3I;
-						if (p.countT3F == 0){p.timeT3F = 0} else {p.timeT3I = SOptions.I015.time.T3 + SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
+						if (p.countT3I == 0){p.timeT3I = 0} else {p.timeT3I = SOptions.I015.time.T3 + SOptions.I020.time.T3 + SOptions.I065.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3;}
 						break;
 						case "T4":
 						--p.countT4I;
-						if (p.countT4F == 0){p.timeT4F = 0} else {p.timeT4I = SOptions.I015.time.T4 + SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}
+						if (p.countT4I == 0){p.timeT4I = 0} else {p.timeT4I = SOptions.I015.time.T4 + SOptions.I020.time.T4 + SOptions.I065.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4;}
 						break;
 						case "T5":
 						--p.countT5I;
-						if (p.countT5F == 0){p.timeT5F = 0} else {p.timeT5I = SOptions.I015.time.T5 + SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}
+						if (p.countT5I == 0){p.timeT5I = 0} else {p.timeT5I = SOptions.I015.time.T5 + SOptions.I020.time.T5 + SOptions.I065.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5;}
 						break;
 						case "T6":
 						--p.countT6I;
-						if (p.countT6F == 0){p.timeT6F = 0} else {p.timeT6I = SOptions.I015.time.T6 + SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}
+						if (p.countT6I == 0){p.timeT6I = 0} else {p.timeT6I = SOptions.I015.time.T6 + SOptions.I020.time.T6 + SOptions.I065.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6;}
 						break;
 						case "T7":
 						--p.countT7I;
-						if (p.countT7F == 0){p.timeT7F = 0} else {p.timeT7I = SOptions.I015.time.T7 + SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}
+						if (p.countT7I == 0){p.timeT7I = 0} else {p.timeT7I = SOptions.I015.time.T7 + SOptions.I020.time.T7 + SOptions.I065.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7;}
 						break;
 					}
 	    			p.countI = p.countT1I+p.countT2I+p.countT3I+p.countT4I+p.countT5I+p.countT6I+p.countT7I;
 		    		//console.log(p.time015F+":013 "+p.time015I+" "+p.time019F+":040 "+p.time074I+" "+p.time020F+":061 "+p.time020I+" "+p.time065F+":065 "+p.time065I+" "+p.time074F+":074 "+p.time074I+" "+p.time077F+":077 "+p.time077I+" "+p.time079F+":079"+p.time079I+" "+p.time090F+":090 "+p.time090I+" "+p.time108F+":108 "+p.time108I+" "+p.time043F+":121 "+p.time043I+"\n");
+		    		//console.log(p.timeT1I+":t1 "+p.timeT2I+":t2 "+p.timeT3I+":t3 "+p.timeT4I+":t4 "+p.timeT5I+":t5 "+p.timeT6I+":t6 "+p.timeT7I+":t7 "+p.timeT8I+":t8 "+p.timeT9I+":t9 "+p.timeT10I+":t10 "+p.timeT11I+":t11 "+"\n");
 		    		p.timeI = p.timeT1I+p.timeT2I+p.timeT3I+p.timeT4I+p.timeT5I+p.timeT6I+p.timeT7I;
 		    		break;
 		    		case "F":
@@ -3214,35 +3216,36 @@ d3.json(SOptions[SIndex].col, function(data) {
 					switch (v.TopicID){
 						case "T1":
 						--p.countT1I;
-						if (p.countT1F == 0){p.timeT1F = 0} else {p.timeT1I = SOptions.I015.time.T1 + SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
+						if (p.countT1I == 0){p.timeT1I = 0} else {p.timeT1I = SOptions.I019.time.T1 + SOptions.I043.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I108.time.T1;}
 						//console.log(SOptions.I015.time.T1 +" : "+ SOptions.I020.time.T1 +" : "+ SOptions.I043.time.T1 +" : "+ SOptions.I065.time.T1 +" : "+ SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1
 						break;
 						case "T2":
 						--p.countT2I;
-						if (p.countT2F == 0){p.timeT2F = 0} else {p.timeT2I = SOptions.I015.time.T2 + SOptions.I020.time.T2 + SOptions.I043.time.T2 + SOptions.I065.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I079.time.T2 + SOptions.I090.time.T2 + SOptions.I108.time.T2;}
+						if (p.countT2I == 0){p.timeT2I= 0} else {p.timeT2I = SOptions.I019.time.T2 + SOptions.I043.time.T2 + SOptions.I074.time.T2 + SOptions.I077.time.T2 + SOptions.I108.time.T2;}
 						break;
 						case "T3":
 						--p.countT3I;
-						if (p.countT3F == 0){p.timeT3F = 0} else {p.timeT3I = SOptions.I015.time.T3 + SOptions.I020.time.T3 + SOptions.I043.time.T3 + SOptions.I065.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I079.time.T3 + SOptions.I090.time.T3 + SOptions.I108.time.T3;}
+						if (p.countT3I == 0){p.timeT3I = 0} else {p.timeT3I = SOptions.I019.time.T3 + SOptions.I043.time.T3 + SOptions.I074.time.T3 + SOptions.I077.time.T3 + SOptions.I108.time.T3;}
 						break;
 						case "T4":
 						--p.countT4I;
-						if (p.countT4F == 0){p.timeT4F = 0} else {p.timeT4I = SOptions.I015.time.T4 + SOptions.I020.time.T4 + SOptions.I043.time.T4 + SOptions.I065.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I079.time.T4 + SOptions.I090.time.T4 + SOptions.I108.time.T4;}
+						if (p.countT4I == 0){p.timeT4I = 0} else {p.timeT4I = SOptions.I019.time.T4 + SOptions.I043.time.T4 + SOptions.I074.time.T4 + SOptions.I077.time.T4 + SOptions.I108.time.T4;}
 						break;
 						case "T5":
 						--p.countT5I;
-						if (p.countT5F == 0){p.timeT5F = 0} else {p.timeT5I = SOptions.I015.time.T5 + SOptions.I020.time.T5 + SOptions.I043.time.T5 + SOptions.I065.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I079.time.T5 + SOptions.I090.time.T5 + SOptions.I108.time.T5;}
+						if (p.countT5I == 0){p.timeT5I = 0} else {p.timeT5I = SOptions.I019.time.T5 + SOptions.I043.time.T5 + SOptions.I074.time.T5 + SOptions.I077.time.T5 + SOptions.I108.time.T5;}
 						break;
 						case "T6":
 						--p.countT6I;
-						if (p.countT6F == 0){p.timeT6F = 0} else {p.timeT6I = SOptions.I015.time.T6 + SOptions.I020.time.T6 + SOptions.I043.time.T6 + SOptions.I065.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I079.time.T6 + SOptions.I090.time.T6 + SOptions.I108.time.T6;}
+						if (p.countT6I == 0){p.timeT6I = 0} else {p.timeT6I = SOptions.I019.time.T6 + SOptions.I043.time.T6 + SOptions.I074.time.T6 + SOptions.I077.time.T6 + SOptions.I108.time.T6;}
 						break;
 						case "T7":
 						--p.countT7I;
-						if (p.countT7F == 0){p.timeT7F = 0} else {p.timeT7I = SOptions.I015.time.T7 + SOptions.I020.time.T7 + SOptions.I043.time.T7 + SOptions.I065.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I079.time.T7 + SOptions.I090.time.T7 + SOptions.I108.time.T7;}
+						if (p.countT7I == 0){p.timeT7I = 0} else {p.timeT7I = SOptions.I019.time.T7 + SOptions.I043.time.T7 + SOptions.I074.time.T7 + SOptions.I077.time.T7 + SOptions.I108.time.T7;}
 						break;
 					}
 	    			p.countI = p.countT1I+p.countT2I+p.countT3I+p.countT4I+p.countT5I+p.countT6I+p.countT7I;
+	    			//console.log(p.countT1I+":t1 "+p.countT2I+":t2 "+p.countT3I+":t3 "+p.countT4I+":t4 "+p.countT5I+":t5 "+p.countT6I+":t6 "+p.countT7I+":t7 "+p.countT8I+":t8 "+p.countT9I+":t9 "+p.countT10I+":t10 "+p.countT11I+":t11 "+"\n");
 		    		//console.log(p.time015F+":013 "+p.time015I+" "+p.time019F+":040 "+p.time074I+" "+p.time020F+":061 "+p.time020I+" "+p.time065F+":065 "+p.time065I+" "+p.time074F+":074 "+p.time074I+" "+p.time077F+":077 "+p.time077I+" "+p.time079F+":079"+p.time079I+" "+p.time090F+":090 "+p.time090I+" "+p.time108F+":108 "+p.time108I+" "+p.time043F+":121 "+p.time043I+"\n");
 		    		p.timeI = p.timeT1I+p.timeT2I+p.timeT3I+p.timeT4I+p.timeT5I+p.timeT6I+p.timeT7I;
 		    		break;
@@ -3895,7 +3898,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 				}//switch Subj.ID
 				p.count = p.count015I+p.count015F+p.count065I+p.count065F+p.count079I+p.count079F+p.count090I+p.count090F+p.count020I+p.count020F;
 				time = p.time015F+p.time015I+p.time065I+p.time065F+p.time079I+p.time079F+p.time090I+p.time090F+p.time020I+p.time020F;
-
+				//console.log(p.time015I+" :15 "+p.time015F+" : "+p.time065I+" :65 "+p.time065F+" : "+p.time079I+" :79 "+p.time079F+" : "+p.time090I+" :90 "+p.time090F+" : "+p.time020I+" :20 "+p.time020F);
 				if (time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};  
 			break;
 			case "f":
@@ -4419,7 +4422,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 				}
 				p.count = p.count019I+p.count019F+p.count043I+p.count043F+p.count074I+p.count074F+p.count077I+p.count077F+p.count108I+p.count108F; 
 				time = p.time019I+p.time019F+p.time043I+p.time043F+p.time074I+p.time074F+p.time077I+p.time077F+p.time108I+p.time108F; 
-				//console.log(p.time019I+" : " +p.time019F+" : "+p.time043I+" : "+p.time043F+" : " +p.time074I+" : " +p.time074F+" : " +p.time077I+" : " +p.time077F+" : " +p.time108I+" : " +p.time108F+"\n");
+				//console.log(p.time019I+" :19 " +p.time019F+" : "+p.time043I+" :43 "+p.time043F+" : " +p.time074I+" :74 " +p.time074F+" : " +p.time077I+" :77 " +p.time077F+" : " +p.time108I+" :108 " +p.time108F+"\n");
 				
 				if (time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};
 				//console.log(time+" :: "+p.count);
@@ -7690,7 +7693,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 
   	
 	//set up annotation chart
-	annotationChart
+  annotationChart
 	.height(SOptions[SIndex].annCH)
 	.dimension(annotationDim)
   	.elasticX(true)
