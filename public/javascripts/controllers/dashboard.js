@@ -688,7 +688,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			case "V_deictic":
 				detTimeRemove(p, v);
 			break;
-			case "V_emblemes":
+			case "V_emblems":
 				detTimeRemove(p, v);
 			break;
 			case "P_speaker_F0Mov":
