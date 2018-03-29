@@ -9,6 +9,7 @@ window.genChart = dc.pieChart("#genChart");
 window.genChart2 = dc.pieChart("#genChart2");
 window.subjChart = dc.rowChart("#subjChart");
 
+
 //fetch data 
 //var topicTimeF = [747.711, 181.367, 250.292, 470.772, 193.292, 621.427, 258.842, 290.633, 436.731, 196.242, 376.136];
 //var genTimeF = [1976.371, 2047.074];
@@ -31,98 +32,98 @@ var subjCH = subjHightDef;
 
 var SOptions = {
 	FGaze : {
-		col : "https://thesisv2.herokuapp.com/GazeF",
+		col : "http://localhost:3000/GazeF",
 		annCH : 350},	
 	IGaze : {
-		col : "https://thesisv2.herokuapp.com/GazeI",
+		col : "http://localhost:3000/GazeI",
 		annCH : 400},
 	FHead : {
-		col : "https://thesisv2.herokuapp.com/HeadF",
+		col : "http://localhost:3000/HeadF",
 		annCH : 550 },
 	IHead : {
-		col : "https://thesisv2.herokuapp.com/HeadI",
+		col : "http://localhost:3000/HeadI",
 		annCH : 700 },
 	FHand : {
-		col : "https://thesisv2.herokuapp.com/HandF",
+		col : "http://localhost:3000/HandF",
 		annCH : 800 },
 	IHand : {
-		col : "https://thesisv2.herokuapp.com/HandI", 
+		col : "http://localhost:3000/HandI", 
 		annCH : 1500 },	
 	FTouch : {
-		col : "https://thesisv2.herokuapp.com/TouchF",
+		col : "http://localhost:3000/TouchF",
 		annCH : 700 },
 	ITouch : {
-		col : "https://thesisv2.herokuapp.com/TouchI",
+		col : "http://localhost:3000/TouchI",
 		annCH : 900 },
 	FPosture : {
-		col : "https://thesisv2.herokuapp.com/PostureF",
+		col : "http://localhost:3000/PostureF",
 		annCH : 300 },
 	IPosture : {
-		col : "https://thesisv2.herokuapp.com/PostureI",
+		col : "http://localhost:3000/PostureI",
 		annCH : 350 },
 	FEmotions : {
-		col : "https://thesisv2.herokuapp.com/EmotionsF",
+		col : "http://localhost:3000/EmotionsF",
 		annCH : 300 },
 	IEmotions : {
-		col : "https://thesisv2.herokuapp.com/EmotionsI",
+		col : "http://localhost:3000/EmotionsI",
 		annCH : 350 },
 	FEmblems : {
-		col : "https://thesisv2.herokuapp.com/EmblemF",
+		col : "http://localhost:3000/EmblemF",
 		annCH : 300 },
 	IEmblems : {
-		col : "https://thesisv2.herokuapp.com/EmblemI",
+		col : "http://localhost:3000/EmblemI",
 		annCH : 350 },		
 	FF0Mov : {
-		col : "https://thesisv2.herokuapp.com/F0MovF",
+		col : "http://localhost:3000/F0MovF",
 		annCH : 300 },
 	IF0Mov : {
-		col : "https://thesisv2.herokuapp.com/F0MovI",
+		col : "http://localhost:3000/F0MovI",
 		annCH : 350 },
 	FF0Lvl : {
-		col : "https://thesisv2.herokuapp.com/F0LvlF",
+		col : "http://localhost:3000/F0LvlF",
 		annCH : 300 },
 	IF0Lvl : {
-		col : "https://thesisv2.herokuapp.com/F0LvlI",
+		col : "http://localhost:3000/F0LvlI",
 		annCH : 350 },	
 	FF0Val : {
-		col : "https://thesisv2.herokuapp.com/F0ValF",
+		col : "http://localhost:3000/F0ValF",
 		annCH : 300 },
 	IF0Val : {
-		col : "https://thesisv2.herokuapp.com/F0ValI",
+		col : "http://localhost:3000/F0ValI",
 		annCH : 350 },
 	FDeictic : {
-		col : "https://thesisv2.herokuapp.com/DeicticF",
+		col : "http://localhost:3000/DeicticF",
 		annCH : 300 },
 	IDeictic : {
-		col : "https://thesisv2.herokuapp.com/DeicticI",
+		col : "http://localhost:3000/DeicticI",
 		annCH : 350 },
 	FEmblems : {
-		col : "https://thesisv2.herokuapp.com/EmblemF",
+		col : "http://localhost:3000/EmblemF",
 		annCH : 300 },
 	IEmblems : {
-		col : "https://thesisv2.herokuapp.com/EmblemI",
+		col : "http://localhost:3000/EmblemI",
 		annCH : 350 },								
 	FDeictic : {
-		col : "https://thesisv2.herokuapp.com/DeicticF",
+		col : "http://localhost:3000/DeicticF",
 		annCH : 300 },
 	IDeictic : {
-		col : "https://thesisv2.herokuapp.com/DeicticI",
+		col : "http://localhost:3000/DeicticI",
 		annCH : 350 },
 	FF0Mov : {
-		col : "https://thesisv2.herokuapp.com/F0MovF",
+		col : "http://localhost:3000/F0MovF",
 		annCH : 400 },
 	IF0Mov : {
-		col : "https://thesisv2.herokuapp.com/F0MovI",
+		col : "http://localhost:3000/F0MovI",
 		annCH : 450 },								
 	FF0Lvl : {
-		col : "https://thesisv2.herokuapp.com/F0LvlF",
+		col : "http://localhost:3000/F0LvlF",
 		annCH : 600 },
 	IF0Lvl : {
-		col : "https://thesisv2.herokuapp.com/F0LvlI",
+		col : "http://localhost:3000/F0LvlI",
 		annCH : 650 },	
 
 	F015:	{
-		col: "https://thesisv2.herokuapp.com/S015F",
+		col: "http://localhost:3000/S015F",
 		annCH : 1400,
 		time : {
 			T1 : 84.264,
@@ -139,7 +140,7 @@ var SOptions = {
 		}
 	},
 	I015:	{
-		col: "https://thesisv2.herokuapp.com/S015I",
+		col: "http://localhost:3000/S015I",
 		annCH : 1200,
 		time : {
 			T1 : 146.657,
@@ -152,7 +153,7 @@ var SOptions = {
 		}
 	},
 	F019:	{
-		col: "https://thesisv2.herokuapp.com/S019F",
+		col: "http://localhost:3000/S019F",
 		annCH : 900,
 		time : {
 			T1 : 64.749,
@@ -169,7 +170,7 @@ var SOptions = {
 		}
 	},
 	I019:	{
-		col: "https://thesisv2.herokuapp.com/S019I",
+		col: "http://localhost:3000/S019I",
 		annCH : 1200,
 		time : {
 			T1 : 85.968,
@@ -182,7 +183,7 @@ var SOptions = {
 		}
 	},
 	F020:	{
-		col: "https://thesisv2.herokuapp.com/S020F",
+		col: "http://localhost:3000/S020F",
 		annCH : 1000,
 		time: {
 			T1 : 116.948,
@@ -199,7 +200,7 @@ var SOptions = {
 		}
 	},
 	I020:	{
-		col: "https://thesisv2.herokuapp.com/S020I",
+		col: "http://localhost:3000/S020I",
 		annCH : 1800,
 		time : {
 			T1 : 86.267,
@@ -212,7 +213,7 @@ var SOptions = {
 		}
 	},
 	F065:	{
-		col: "https://thesisv2.herokuapp.com/S065F",
+		col: "http://localhost:3000/S065F",
 		annCH : 1600,
 		time: {
 			T1 : 97.659,
@@ -229,7 +230,7 @@ var SOptions = {
 		}
 	},
 	I065:	{
-		col: "https://thesisv2.herokuapp.com/S065I",
+		col: "http://localhost:3000/S065I",
 		annCH : 1800,
 		time : {
 			T1 : 167.888,
@@ -242,7 +243,7 @@ var SOptions = {
 		}
 	},
 	F074:	{
-		col: "https://thesisv2.herokuapp.com/S074F",
+		col: "http://localhost:3000/S074F",
 		annCH : 900,
 		time : {
 			T1 : 62.888,
@@ -259,7 +260,7 @@ var SOptions = {
 		}
 	},
 	I074:	{
-		col: "https://thesisv2.herokuapp.com/S074I",
+		col: "http://localhost:3000/S074I",
 		annCH : 1600,
 		time : {
 			T1 : 163.265,
@@ -272,7 +273,7 @@ var SOptions = {
 		}
 	},
 	F077:	{
-		col: "https://thesisv2.herokuapp.com/S077F",
+		col: "http://localhost:3000/S077F",
 		annCH : 1200,
 		time: {
 			T1 : 68.787,
@@ -289,7 +290,7 @@ var SOptions = {
 		}
 	},
 	I077:	{
-		col: "https://thesisv2.herokuapp.com/S077I",
+		col: "http://localhost:3000/S077I",
 		annCH : 1800,
 		time : {
 			T1 : 121.257,
@@ -302,7 +303,7 @@ var SOptions = {
 		}
 	},
 	F079:	{
-		col: "https://thesisv2.herokuapp.com/S079F",
+		col: "http://localhost:3000/S079F",
 		annCH : 900,
 		time: {
 			T1 : 84.344,
@@ -319,7 +320,7 @@ var SOptions = {
 		}
 	},
 	I079:	{
-		col: "https://thesisv2.herokuapp.com/S079I",
+		col: "http://localhost:3000/S079I",
 		annCH : 1200,
 		time : {
 			T1 : 113.167,
@@ -332,7 +333,7 @@ var SOptions = {
 		}
 	},
 	F090:	{
-		col: "https://thesisv2.herokuapp.com/S090F",
+		col: "http://localhost:3000/S090F",
 		annCH : 900,
 		time :{
 			T1 : 74.705,
@@ -349,7 +350,7 @@ var SOptions = {
 		}
 	},
 	I090:	{
-		col: "https://thesisv2.herokuapp.com/S090I",
+		col: "http://localhost:3000/S090I",
 		annCH : 2600,
 		time : {
 			T1 : 198.914,
@@ -362,7 +363,7 @@ var SOptions = {
 		}
 	},
 	F108:	{
-		col: "https://thesisv2.herokuapp.com/S108F",
+		col: "http://localhost:3000/S108F",
 		annCH : 1600,
 		time : {
 			T1 : 60.762,
@@ -379,7 +380,7 @@ var SOptions = {
 		}
 	},
 	I108:	{
-		col: "https://thesisv2.herokuapp.com/S108I",
+		col: "http://localhost:3000/S108I",
 		annCH : 1600,
 		time : {
 			T1 : 46.057,
@@ -392,7 +393,7 @@ var SOptions = {
 		}
 	},
 	F043:	{
-		col: "https://thesisv2.herokuapp.com/S043F",
+		col: "http://localhost:3000/S043F",
 		annCH : 1200,
 		time : {
 			T1 : 63.904,
@@ -409,7 +410,7 @@ var SOptions = {
 		}
 	},
 	I043:	{
-		col: "https://thesisv2.herokuapp.com/S043I",
+		col: "http://localhost:3000/S043I",
 		annCH : 1400,
 		time : {
 			T1 : 91.798,
@@ -7690,7 +7691,6 @@ d3.json(SOptions[SIndex].col, function(data) {
   	.valueAccessor(function (p) {
 	   return p.value.freq;})
     .xAxis().ticks(5);
-
   	
 	//set up annotation chart
   annotationChart
@@ -7705,21 +7705,4 @@ d3.json(SOptions[SIndex].col, function(data) {
 
 });
 
-}	
-
-
-
-/*
-	//print filter to console -function
-	function print_filter(filter){
-		var f=eval(filter);
-		if (typeof(f.length) != "undefined") {}else{}
-		if (typeof(f.top) != "undefined") {f=f.top(Infinity);}else{}
-		if (typeof(f.dimension) != "undefined") {f=f.dimension(function(d) { return "";}).top(Infinity);}else{}
-		console.log(filter+"("+f.length+") = "+JSON.stringify(f).replace("[","[\n\t").replace(/}\,/g,"},\n\t").replace("]","\n]"));
-	} 
-
-	print_filter("allEntriesByTopic");
-*/	
-	
-																	
+}
