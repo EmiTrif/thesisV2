@@ -652,14 +652,11 @@ d3.json(SOptions[SIndex].col, function(data) {
 			case "V_deictic":
 				detTimeAdd(p, v);
 			break;
-			case "V_emblames":
+			case "V_emblemes":
 				detTimeAdd(p, v);
 			break;
 			case "P_speaker_F0Mov":
 				detTimeAdd(p, v);
-			break;
-			case "P_speaker_F0Level":
-				detTime(p, v);
 			break;
 			case "P_speaker_F0Level":
 				detTime(p, v);
@@ -691,13 +688,10 @@ d3.json(SOptions[SIndex].col, function(data) {
 			case "V_deictic":
 				detTimeRemove(p, v);
 			break;
-			case "V_emblames":
+			case "V_emblemes":
 				detTimeRemove(p, v);
 			break;
 			case "P_speaker_F0Mov":
-				detTimeRemove(p, v);
-			break;
-			case "P_speaker_F0Level":
 				detTimeRemove(p, v);
 			break;
 			case "P_speaker_F0Level":
