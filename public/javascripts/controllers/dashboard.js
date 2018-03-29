@@ -659,7 +659,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 				detTimeAdd(p, v);
 			break;
 			case "P_speaker_F0Level":
-				detTime(p, v);
+				detTimeAdd(p, v);
 			break;
 		}
 		return p;
