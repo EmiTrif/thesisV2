@@ -722,7 +722,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			} else if (v.Formal == "I"){
 				++p.count;
 				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I019.time.T1 +SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
-				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};
+				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
 			case "T2":
@@ -825,7 +825,7 @@ d3.json(SOptions[SIndex].col, function(data) {
 			} else if (v.Formal == "I"){
 				--p.count;
 				if (p.count == 0){p.time = 0} else {p.time = SOptions.I015.time.T1 + SOptions.I019.time.T1 +SOptions.I020.time.T1 + SOptions.I043.time.T1 + SOptions.I065.time.T1 + SOptions.I074.time.T1 + SOptions.I077.time.T1 + SOptions.I079.time.T1 + SOptions.I090.time.T1 + SOptions.I108.time.T1;}
-				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/time), 8);};
+				if (p.time == 0) { p.freq = 0; } else { p.freq = d3.round((p.count/p.time), 8);};
 			} 
 			break;
 			case "T2":
